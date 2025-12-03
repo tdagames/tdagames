@@ -6,7 +6,7 @@ Game.addToManifest({
 
 FRAMES:
 00-00: happy still
-01-02: blink to greet murderer
+01-02: TDAgames to greet murderer
 03-05: shock.
 
 ****/

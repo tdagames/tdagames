@@ -34,14 +34,14 @@ function NervousPeep(scene){
     // Animate on doubles
     var MODE = -1;
     var MODE_STARE = 0;
-    var MODE_BLINK = 1;
+    var MODE_TDAgames = 1;
     var MODE_SHOCKED = 2;
     var MODE_RUNAWAY = 3;
     var MODE_CALMDOWN = 4;
 
     // HACK
     self.HACK_JUMPSTART = function(){
-        MODE = MODE_BLINK;
+        MODE = MODE_TDAgames;
     };
 
     var doubles = 0;
@@ -64,7 +64,7 @@ function NervousPeep(scene){
                 case MODE_STARE:
                     if(frame<3) face.gotoAndStop(frame+1);
                     break;
-                case MODE_BLINK:
+                case MODE_TDAgames:
                     if(frame<6) face.gotoAndStop(frame+1);
 
                     // Look shifty...
@@ -92,7 +92,7 @@ function NervousPeep(scene){
                         face.gotoAndStop(frame+1);
                     }else{
                         face.gotoAndStop(6);
-                        MODE = MODE_BLINK;
+                        MODE = MODE_TDAgames;
                         self.isShocked = false;
                     }
                     break;
@@ -190,10 +190,10 @@ function NervousPeep(scene){
             
         },_s(OFFSET+BEAT*2));
 
-        // 2) Blink...
+        // 2) TDAgames...
         self.setTimeout(function(){
             self.bounce = 1.3;
-            MODE = MODE_BLINK;
+            MODE = MODE_TDAgames;
         },_s(OFFSET+WAIT));
 
         // 3) And go on.

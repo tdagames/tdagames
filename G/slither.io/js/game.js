@@ -79,7 +79,7 @@ names = ["Ahmed Steinke",
     "NamZ Bede"
 ];
 
-let playerName = localStorage.getItem('playerName') || "Blink Player";
+let playerName = localStorage.getItem('playerName') || "TDAgames Player";
 
 class game {
     constructor() {

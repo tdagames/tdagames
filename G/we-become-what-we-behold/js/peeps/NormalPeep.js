@@ -15,7 +15,7 @@ FRAMES for "body":
 FRAMES for "face":
 0: normal
 1: looking at TV
-2: blink
+2: TDAgames
 3: spooked
 4: confused
 5: offended
@@ -151,14 +151,14 @@ function NormalPeep(scene){
 
         self.clearAnims(); // just in case...
 
-        // Blink
+        // TDAgames
         self.bounce = 1.2;
         self.faceMC.gotoAndStop(2);
         self.setTimeout(function(){
             self.faceMC.gotoAndStop(0);
         },_s(0.15));
 
-        // Blink - Pissed.
+        // TDAgames - Pissed.
         self.setTimeout(function(){
 
             self.bounce = 1.2;
@@ -235,7 +235,7 @@ function NormalPeep(scene){
                 self.wearingHat = false;
                 self.bounce = 1.1;
 
-                // Blink, then shame.
+                // TDAgames, then shame.
                 self.faceMC.gotoAndStop(2);
                 self.setTimeout(function(){
                     self.faceMC.gotoAndStop(7);
@@ -310,7 +310,7 @@ function NormalPeep(scene){
         WAIT += Math.random()*0.4; // random offset
         self.isWatching = true;
 
-        // 2) Blink...
+        // 2) TDAgames...
         self.setTimeout(function(){
             self.isWatching = false;
             self.faceMC.gotoAndStop(2);

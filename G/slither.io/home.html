@@ -121,7 +121,7 @@
     <form id="slitherForm">
       <!-- Player name -->
       <label for="playerName">Player Name</label>
-      <input type="text" id="playerName" placeholder="Blink Player" required>
+      <input type="text" id="playerName" placeholder="TDAgames Player" required>
 
       <!-- Best Score -->
       <h3 class="muted">🏆 Best Score: <span id="bestScore">0</span></h3>
@@ -144,7 +144,7 @@
   const form = document.getElementById("slitherForm");
   form.addEventListener("submit", e => {
     e.preventDefault();
-    localStorage.setItem('playerName', document.getElementById('playerName').value || 'Blink Player');
+    localStorage.setItem('playerName', document.getElementById('playerName').value || 'TDAgames Player');
     openWebOldLogic(() => {
       window.location.href = 'index.html'; // your actual game page
     });

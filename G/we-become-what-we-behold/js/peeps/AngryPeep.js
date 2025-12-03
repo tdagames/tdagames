@@ -45,13 +45,13 @@ function AngryPeep(scene, type){
     var doubles = 0;
     var MODE = -1;
     var MODE_STARE = 0;
-    var MODE_BLINK = 1;
+    var MODE_TDAgames = 1;
     var MODE_SHOUT = 2;
     self.gracePeriod = -1;
 
     // HACK
     self.HACK_JUMPSTART = function(){
-        MODE = MODE_BLINK;
+        MODE = MODE_TDAgames;
     };
 
     // WANDERING
@@ -80,7 +80,7 @@ function AngryPeep(scene, type){
                 case MODE_STARE:
                     if(frame<5) face.gotoAndStop(frame+1);
                     break;
-                case MODE_BLINK:
+                case MODE_TDAgames:
                     if(frame<10){
                         face.gotoAndStop(frame+1);
                     }
@@ -90,7 +90,7 @@ function AngryPeep(scene, type){
                         face.gotoAndStop(frame+1);
                     }else{
                         face.gotoAndStop(10);
-                        MODE = MODE_BLINK;
+                        MODE = MODE_TDAgames;
                         self.isShouting = false;
                         self.startWalking();
                     }
@@ -217,10 +217,10 @@ function AngryPeep(scene, type){
 
         },_s(BEAT*2+OFFSET));
 
-        // 2) Blink...
+        // 2) TDAgames...
         self.setTimeout(function(){
             self.bounce = 1.3;
-            MODE = MODE_BLINK;
+            MODE = MODE_TDAgames;
         },_s(WAIT+OFFSET));
 
         // 3) And go on.

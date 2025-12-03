@@ -21,7 +21,7 @@
         <option value="ai">Player vs AI</option>
       </select>
       <label for="player1">Player 1 Name</label>
-      <input type="text" id="player1" placeholder="Blink Player 1" required>
+      <input type="text" id="player1" placeholder="TDAgames Player 1" required>
       <label for="player1Color">Player 1 Color</label>
       <select id="player1Color" required>
         <option value="white" selected>White</option>
@@ -29,7 +29,7 @@
       </select>
 
       <label for="player2">Player 2 Name</label>
-      <input type="text" id="player2" placeholder="Blink Player 2" required>
+      <input type="text" id="player2" placeholder="TDAgames Player 2" required>
 
       <button type="submit" class="button" style="margin-top:18px;width:100%">
         Start Game 🚀
@@ -56,7 +56,7 @@
   function updatePlayer2Placeholder() {
     const color = getPlayer2Color(player1ColorSel.value);
     if (modeSel.value !== "ai") {
-      player2Input.placeholder = `Blink Player 2 (${color})`;
+      player2Input.placeholder = `TDAgames Player 2 (${color})`;
     }
   }
 
@@ -66,7 +66,7 @@
   // Update placeholder when mode changes
   modeSel.addEventListener("change", () => {
     if (modeSel.value === "ai") {
-      player2Input.value = "Blink AI";
+      player2Input.value = "TDAgames AI";
       player2Input.disabled = true;
     } else {
       player2Input.value = "";
@@ -85,8 +85,8 @@
     const player2Color = getPlayer2Color(player1Color);
 
     const setup = {
-      player1: document.getElementById("player1").value.trim() || "Blink Player 1",
-      player2: player2Input.value.trim() || (modeSel.value === "ai" ? "Blink AI" : "Blink Player 2"),
+      player1: document.getElementById("player1").value.trim() || "TDAgames Player 1",
+      player2: player2Input.value.trim() || (modeSel.value === "ai" ? "TDAgames AI" : "TDAgames Player 2"),
       mode: modeSel.value,
       colors: {
         player1: player1Color,
