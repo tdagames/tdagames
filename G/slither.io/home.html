@@ -156,16 +156,12 @@
   form.addEventListener("submit", e => {
     e.preventDefault();
     localStorage.setItem('playerName', document.getElementById('playerName').value || 'TDAgames Player');
-    openWebOldLogic(() => {
-      window.location.href = 'index.html'; // your actual game page
-    });
+    window.location.href = 'index.html';
   });
 
   // Back home button
   function goHome(){
-    openWebOldLogic(() => {
-      window.location.href = "../../index.html"; // adjust if needed
-    });
+    window.location.href = "../../index.html";
   }
 </script>
 </body>

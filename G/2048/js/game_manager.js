@@ -1,3 +1,12 @@
+// Simple helper function (removed ads)
+function openWebOldLogic(action) {
+  if (typeof action === "function") {
+    action();
+  } else if (typeof action === "string") {
+    window.location.href = action;
+  }
+}
+
 function GameManager(size, InputManager, Actuator, StorageManager) {
   this.size           = size; // Size of the grid
   this.inputManager   = new InputManager;

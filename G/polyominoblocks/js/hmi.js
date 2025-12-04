@@ -19,6 +19,15 @@
  *
  */
 
+// Simple helper function (removed ads)
+function openWebOldLogic(action) {
+  if (typeof action === "function") {
+    action();
+  } else if (typeof action === "string") {
+    window.location.href = action;
+  }
+}
+
 const EMPTY = ' ';
 const BLOCK = 'X';
 const BLOCKSRC = [

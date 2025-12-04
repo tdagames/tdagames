@@ -1,3 +1,12 @@
+// Simple helper function (removed ads)
+function openWebOldLogic(action) {
+  if (typeof action === "function") {
+    action();
+  } else if (typeof action === "string") {
+    window.location.href = action;
+  }
+}
+
 game_W = 0, game_H = 0;
 
 var bg_im = new Image();
