@@ -99,7 +99,7 @@ input:checked+.slider:before{transform:translateX(26px);}
         <tr>
         <!-- <td style="height:48px;" colspan="2"><div class="button" onclick="img_file.click();">Load img file</div></td> -->
         <td style="height:48px;" colspan="2">
-            <div class="button" onclick="openWebOldLogic(() => { img_file.click(); });">Load img file</div>
+            <div class="button" onclick="img_file.click();">Load img file</div>
         </td>
         </tr>
         <tr>
@@ -154,12 +154,12 @@ input:checked+.slider:before{transform:translateX(26px);}
         <tr>
         <!-- <td style="height:48px;" colspan="2"><div class="button" onclick="fifteen_update();">Refresh</div></td> -->
         <td style="height:48px;" colspan="2">
-          <div class="button" onclick="openWebOldLogic(() => { fifteen_update(); });">Refresh</div>
+          <div class="button" onclick="fifteen_update();">Refresh</div>
         </td>
         </tr>
         <tr>
         <td style="height:48px;" colspan="2">
-          <div class="button" onclick="openWebOldLogic(() => { window.location.href='../../index.html'; });">Go to Home</div>
+          <div class="button" onclick="window.location.href='../../index.html';">Go to Home</div>
         </td>
         </tr>
         <!-- <tr>
@@ -265,6 +265,5 @@ var drop = {
 window.addEventListener("DOMContentLoaded", drop.init);
 </script>
 <script src="fifteen_puzzle.js"></script> <!--path to file engine-->
-<script src="../../adsopenhelper.js"></script>
 </body>
 </html>

@@ -76,11 +76,10 @@
     const navRestartBtn = document.getElementById('navRestartBtn');
     const navHomeBtn = document.getElementById('navHomeBtn');
 
-    restartBtn.addEventListener('click', () => openWebOldLogic(restartGameAction));
-    homeBtn.addEventListener('click', () => openWebOldLogic(goHomeAction));
-    navRestartBtn.addEventListener('click', () => openWebOldLogic(restartGameAction));
-    navHomeBtn.addEventListener('click', () => openWebOldLogic(goHomeAction));
+    restartBtn.addEventListener('click', restartGameAction);
+    homeBtn.addEventListener('click', goHomeAction);
+    navRestartBtn.addEventListener('click', restartGameAction);
+    navHomeBtn.addEventListener('click', goHomeAction);
   </script>
-  <script src="../../adsopenhelper.js"></script>
 </body>
 </html>

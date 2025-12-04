@@ -1,5 +1,5 @@
 // ✅ One variable to rule all ads
-window.ADS_ENABLED = true; // set false to disable ads globally
+window.ADS_ENABLED = false; // Ads disabled globally
 
 // Related games config
 window.RELATED_GAMES_API = "https://api.npoint.io/e24cdd5120b7643095ac";

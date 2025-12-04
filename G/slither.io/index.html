@@ -56,21 +56,16 @@
     <script type="text/javascript" src="js/food.js"></script>
     <script type="text/javascript" src="js/snake.js"></script>
     <script type="text/javascript" src="js/game.js"></script>
-    <script src="../../adsopenhelper.js"></script>
 
     <script>
         let paused = false;
 
         function goHome(){
-            openWebOldLogic(() => {
-                window.location.href = "home.html"; // adjust if needed
-            });
+            window.location.href = "home.html";
         }
 
         function restartGame(){
-            openWebOldLogic(() => {
-                window.location.href = "index.html"; // reload game
-            });
+            window.location.href = "index.html";
         }
 
         function togglePause(){

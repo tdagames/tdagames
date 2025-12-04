@@ -340,7 +340,15 @@
   window.addEventListener('resize', resizeCanvas);
 
 })();
+
+// Simple helper function (removed ads)
+function openWebOldLogic(action) {
+  if (typeof action === "function") {
+    action();
+  } else if (typeof action === "string") {
+    window.location.href = action;
+  }
+}
 </script>
-<script src="../../adsopenhelper.js"></script>
 </body>
 </html>
