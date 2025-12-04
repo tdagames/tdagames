@@ -12,13 +12,15 @@ const GAME_DATA = {
   icon: "favicon.ico",
   playLink: "page.html",
   description:
-    "Hill Climb Racing is not your average platformer — it’s a rage-filled challenge that tests your patience and timing at every step!",
+    "Hill Climb Racing is the ultimate physics-based driving adventure! Take control of your vehicle and conquer the most challenging hills and terrains. Master the art of balancing acceleration and braking to navigate steep slopes, perform flips, and travel as far as possible without running out of fuel or crashing.",
 
   features: [
-    "🔥 Fast-paced gameplay with unpredictable twists.",
-    "💀 Instant respawns to keep you in the action.",
-    "🎮 Play directly in your browser — no downloads required.",
-    "🏆 Compete with friends for the fastest completion."
+    "🏔️ Endless hill climbing action with realistic physics",
+    "🚗 Multiple vehicles to unlock and upgrade",
+    "⛽ Strategic fuel management adds extra challenge",
+    "🎯 Perform stunts and flips for bonus points",
+    "🎮 Play directly in your browser — no downloads required",
+    "🏆 Compete for the longest distance traveled"
   ],
 
   screenshots: [

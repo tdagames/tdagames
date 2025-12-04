@@ -12,13 +12,15 @@ const GAME_DATA = {
   icon: "favicon.ico",
   playLink: "page.html",
   description:
-    "Block the pig is not your average platformer — it’s a rage-filled challenge that tests your patience and timing at every step!",
+    "Block the Pig is a clever strategy puzzle game that will test your logical thinking! Your goal is to trap a cunning pig by strategically placing blocks on a hexagonal grid. The pig will try to escape to the edges, so you must predict its moves and block all possible escape routes before it's too late!",
 
   features: [
-    "🔥 Fast-paced gameplay with unpredictable twists.",
-    "💀 Instant respawns to keep you in the action.",
-    "🎮 Play directly in your browser — no downloads required.",
-    "🏆 Compete with friends for the fastest completion."
+    "🧩 Engaging puzzle gameplay that tests your strategy",
+    "🐷 Smart AI pig that adapts to your blocking patterns",
+    "🎯 Progressive difficulty that challenges your mind",
+    "🏆 Multiple levels with increasing complexity",
+    "🎮 Play directly in your browser — no downloads required",
+    "💡 Develops logical thinking and planning skills"
   ],
 
   screenshots: [

@@ -12,14 +12,17 @@ const GAME_DATA = {
   icon: "favicon.ico",
   playLink: "page.html",
   description:
-    "Level Devil is not your average platformer — it’s a rage-filled challenge that tests your patience and timing at every step!",
+    "Level Devil is a wickedly challenging platformer where the levels themselves are out to get you! Prepare for unexpected obstacles, shifting platforms, and devilish traps that will test your reflexes and patience. Each level is designed to surprise and frustrate you in the most entertaining way possible.",
 
   features: [
-    "🔥 Fast-paced gameplay with unpredictable twists.",
-    "💀 Instant respawns to keep you in the action.",
-    "🎮 Play directly in your browser — no downloads required.",
-    "🏆 Compete with friends for the fastest completion."
+    "👿 Devilishly difficult levels with unexpected surprises",
+    "🎯 Precise platforming mechanics that reward skilled play",
+    "💀 Instant respawns to keep you trying 'just one more time'",
+    "🎮 Play directly in your browser — no downloads required",
+    "🏆 Challenge yourself to complete all levels"
   ],
+  
+  aboutGame: true, // Enable About Game section
 
   screenshots: [
     "sl/img_leveldevil.jpg",

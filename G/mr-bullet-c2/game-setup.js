@@ -12,13 +12,15 @@ const GAME_DATA = {
   icon: "favicon.ico",
   playLink: "page.html",
   description:
-    "Mr Bullet Online is not your average platformer — it’s a rage-filled challenge that tests your patience and timing at every step!",
+    "Mr Bullet is an addictive puzzle shooting game where every shot counts! Use your brain and physics skills to ricochet bullets off walls, objects, and surfaces to take down enemies and solve intricate puzzles. With limited bullets per level, you'll need perfect aim and clever thinking to complete each challenge.",
 
   features: [
-    "🔥 Fast-paced gameplay with unpredictable twists.",
-    "💀 Instant respawns to keep you in the action.",
-    "🎮 Play directly in your browser — no downloads required.",
-    "🏆 Compete with friends for the fastest completion."
+    "🎯 Unique physics-based bullet ricocheting gameplay",
+    "🧩 Hundreds of challenging puzzle levels to solve",
+    "💡 Creative solutions with multiple ways to win",
+    "🎨 Colorful graphics and smooth animations",
+    "🎮 Play directly in your browser — no downloads required",
+    "🏆 Master each level with precision and strategy"
   ],
 
   screenshots: [

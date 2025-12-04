@@ -63,6 +63,27 @@
   <img id="pauseBtn" src="./images/btn_pause.svg"/>
   <img id='restartBtn' src="./images/btn_restart.svg"/>
   <div id='HIGHSCORE'>HIGH SCORE</div>
+  
+  <!-- Game Introduction -->
+  <div id="gameIntro" style="display:none; position:fixed; bottom:80px; left:50%; transform:translateX(-50%); background:rgba(0,0,0,0.9); padding:20px; border-radius:15px; max-width:500px; color:#fff; z-index:5; text-align:center;">
+    <h3 style="margin-top:0; color:#2ecc71;">About Hextris</h3>
+    <p style="line-height:1.6; font-size:14px;">
+      Hextris is a fast-paced puzzle game inspired by Tetris! Rotate the hexagon to catch falling colored blocks and create matching lines of three or more. The game speeds up as you progress, testing your reflexes and color-matching skills. How long can you survive?
+    </p>
+    <p style="line-height:1.6; font-size:14px; margin-bottom:0;">
+      <strong>🎯 Features:</strong> Fast-paced hexagonal gameplay • Combo system for bonus points • Progressive difficulty • Addictive one-more-try mechanics • Challenge your high score
+    </p>
+    <button onclick="document.getElementById('gameIntro').style.display='none'" style="margin-top:15px; padding:8px 20px; background:#2ecc71; border:none; border-radius:8px; color:#fff; cursor:pointer; font-weight:bold;">Got it!</button>
+  </div>
+  <script>
+    // Show intro on first load
+    if (!localStorage.getItem('hextrisIntroSeen')) {
+      setTimeout(() => {
+        document.getElementById('gameIntro').style.display = 'block';
+        localStorage.setItem('hextrisIntroSeen', 'true');
+      }, 1000);
+    }
+  </script>
 
   <div id='highScoreInGameText'>
     <div id='highScoreInGameTextHeader'>HIGH SCORE</div>

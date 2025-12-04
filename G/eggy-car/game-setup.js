@@ -12,13 +12,15 @@ const GAME_DATA = {
   icon: "favicon.ico",
   playLink: "page.html",
   description:
-    "Eggy Car is not your average platformer — it’s a rage-filled challenge that tests your patience and timing at every step!",
+    "Eggy Car is a fun and addictive physics-based driving game where your mission is simple but challenging: drive your car over hills and bumps while keeping a fragile egg safe on top! Carefully balance your speed and momentum to prevent the egg from falling. How far can you go without cracking?",
 
   features: [
-    "🔥 Fast-paced gameplay with unpredictable twists.",
-    "💀 Instant respawns to keep you in the action.",
-    "🎮 Play directly in your browser — no downloads required.",
-    "🏆 Compete with friends for the fastest completion."
+    "🥚 Unique physics-based egg balancing gameplay",
+    "🚗 Smooth driving controls with realistic physics",
+    "🏔️ Navigate through challenging hills and obstacles",
+    "💎 Collect coins to unlock new vehicles and eggs",
+    "🎮 Play directly in your browser — no downloads required",
+    "🏆 Beat your high score and challenge your friends"
   ],
 
   screenshots: [
